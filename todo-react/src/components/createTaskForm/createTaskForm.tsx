@@ -3,6 +3,7 @@ import { Box, Typography, Stack } from '@mui/material';
 
 import { TaskTitleField } from './_taskTitleField';
 import { TaskDescriptionField } from './_taskDescriptionField';
+import { TaskDateField } from './_taskDateField';
 
 export const CreateTaskForm: FC = (): ReactElement => {
   return (
@@ -18,8 +19,9 @@ export const CreateTaskForm: FC = (): ReactElement => {
         Create A Task
       </Typography>
       <Stack sx={{ width: '100%' }} spacing={2}>
-        <TaskTitleField disabled/>
+        <TaskTitleField/>
         <TaskDescriptionField />
+        <TaskDateField/>
       </Stack>
 
       {/*Task Date */}
